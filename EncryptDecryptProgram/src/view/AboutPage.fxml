@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="624.0" prefWidth="842.0" style="-fx-background-color: FCFCF5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AboutPageController">
+   <Label layoutX="343.0" layoutY="26.0" text="About Page">
+      <font>
+         <Font name="Tahoma Bold" size="25.0" />
+      </font>
+   </Label>
+   <Label layoutX="72.0" layoutY="58.0" />
+   <TextArea layoutX="72.0" layoutY="82.0" prefHeight="470.0" prefWidth="686.0" text="A simple encryption and decryption program with three encryption methods, which include ROT1,&#10;ROT3, and Caesar Cipher. The user can enter a message and choose an algorithm to either &#10;encrypt or decrypt.&#10;&#10;About the Algorithms:&#10;&#10;ROT1: a substitution cipher based on a shift of the alphabet. In this method, a letter is replaced by&#10;the one immediately after in the alphabet ( for the last letter Z, the alphabet is seen as a loop and&#10;the next letter Z is therefore A, the first letter). &#10;&#10;Link: https://www.dcode.fr/rot1-cipher&#10;&#10;&#10;ROT13: a simple letter substitution cipher that replaces a letter with the 13th letter after it in &#10;the alphabet. ROT13 is a special case of the Caeser Cipher. &#10;&#10;Link: https://en.wikipedia.org/wiki/ROT13&#10;&#10;&#10;Ceasar Cipher: a simple encryption technique. It's a type of substitution cipher in which each letter &#10;in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, &#10;with a left shift of 3, D would be replaced by A, E would become B, and so on. The method &#10;is named after Julius Caesar, who used the technique in his private correspondence.&#10;&#10;Link:https://en.wikipedia.org/wiki/">
+      <font>
+         <Font name="Tahoma" size="14.0" />
+      </font>
+   </TextArea>
+   <Button fx:id="backButton" layoutX="702.0" layoutY="29.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="29.0" prefWidth="95.0" text="Back">
+      <font>
+         <Font name="Tahoma Bold" size="15.0" />
+      </font>
+   </Button>
+</AnchorPane>
